@@ -20,7 +20,7 @@
                                  bal (/ response 1000000000)]
                            (set-balance bal)))]
     
-    (hooks/use-effect [wallet] (get-balance)(set-balance "0"))
+    (hooks/use-effect [wallet] (if (= nil public-key) (set-balance "0")(get-balance)))
 
     (d/main
      (d/h3 "Welcome" (d/span {:className "user"} (str (if public-key (str " " public-key)) ",")))
