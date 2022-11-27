@@ -1,0 +1,25 @@
+{
+  "name": "sol-wallet",
+  "version": "1.0.0",
+  "description": "Solana wallet using clojure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "shadow-cljs": "^2.20.12"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.3.6",
+    "@solana/wallet-adapter-base": "^0.9.19",
+    "@solana/wallet-adapter-react": "^0.15.25",
+    "@solana/wallet-adapter-react-ui": "^0.9.23",
+    "@solana/wallet-adapter-wallets": "^0.19.6",
+    "@solana/web3.js": "^1.66.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-refresh": "^0.14.0"
+  }
+}

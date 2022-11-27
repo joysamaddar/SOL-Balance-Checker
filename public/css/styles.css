@@ -1,0 +1,70 @@
+:root {
+    --black: #000000;
+    --bg: #0E1013;
+    --grey: #17181B;
+    --purple: #6A50A7
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+background: var(--bg);
+min-height: 100vh;
+color: var(--purple);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+h3{
+  text-shadow: 1px 1px var(--grey);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.user{
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+.container{
+  width: 80%;
+  background: var(--grey);
+  padding: 2rem;
+  box-shadow: 0.9rem 0.9rem var(--black), inset 2px 0px var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+
+.container:hover{
+  box-shadow: 0.5rem 0.5rem var(--black), inset 6px 0px var(--purple);
+}
+
+
+@media only screen and (max-width: 650px) {
+  
+h3{
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+.user{
+  font-size: 0.8rem;
+}
+.container{
+  width: 80%;
+  flex-direction: column;
+}
+
+.container_right{
+  margin-top: 2rem;
+
+}
+}

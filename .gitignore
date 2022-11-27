@@ -1,0 +1,8 @@
+.calva
+.clj-kondo
+.cpcache
+.lsp
+.shadow-cljs
+node_modules
+public/js
+.DS_Store
